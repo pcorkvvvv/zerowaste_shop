@@ -1,0 +1,229 @@
+*{
+    padding: 0; margin: 0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+li{
+    list-style: none;
+    font-size: 12px;
+    line-height: 30px;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+header{
+    width: 100%; 
+    min-height: 80px;
+    background-color: white;
+    margin: 0 auto;
+}
+.top_bar{
+    height: 30px;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5% 10px 5%;
+}
+.top_left, .top_center, .top_right{
+    display: flex;
+}
+.top_left>li{
+    padding-right: 20px;
+}
+.top_left>li>a{
+    color: white;
+}
+.top_center{
+    margin: 0 auto;
+}
+.top_right>li{
+    padding-left: 20px
+}
+.top_right>li>img{
+    padding-top: 10px;
+    padding-left: 30%;
+}
+.top_right>li>a{
+    color: white;
+}
+.nav_bar {
+    min-height: 50px;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    position: relative;
+    flex-wrap: wrap;
+}
+.nav_menu {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.nav_menu > li {
+    position: relative; 
+    font-weight: bold;
+    font-size: 12px;
+    white-space: nowrap;
+    transition: color 0.3s ease-in-out;
+}
+.logo{
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin: 0 auto;
+}
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 0;
+    min-width: 160px;
+    z-index: 1000;
+}
+.has-dropdown:hover .dropdown{
+    display: flex;
+}
+.dropdown li {
+    padding: 10px 20px;
+    white-space: nowrap;
+}
+.dropdown li a {
+    color: black;
+    font-size: 14px;
+    display: block;
+}
+.nav_bar>div{
+    text-align: center;
+}
+.nav_icon{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+.nav_icon>li{
+    padding-left: 10px;
+}
+footer{
+    width: 100%; 
+    min-height: 466px;
+    background-color: black;
+    margin: 0 auto;
+    padding: 160px 5% 160px 5%;
+    box-sizing: border-box;
+}
+.footer_top{
+    width: 100%; 
+    max-width: 1729px;
+    min-height: 300px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+.footer_top>ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-size: 40px;
+    margin: 0px 5%;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.footer_top>ul>li{
+    font-size: 20px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+}
+.footer_top>li>span{
+    display: block;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+.footer_bottem{
+    width: 100%;
+    max-width: 1700px;
+    min-height: 30px;
+    margin: 100px auto 0 auto;
+    padding: 0 5%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.footer_bottem{
+    color: white;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+/* 태블릿 반응형 (1024px 이하) */
+@media (max-width: 1024px) {
+    .nav_menu {
+        gap: 15px;
+    }
+    .nav_menu > li {
+        font-size: 11px;
+    }
+    .nav_icon {
+        gap: 15px;
+    }
+    .footer_top>ul>li{
+        font-size: 18px;
+        min-width: 180px;
+    }
+    .footer_bottem{
+        font-size: 12px;
+    }
+}
+
+/* 모바일 반응형 (720px 이하) */
+@media (max-width: 720px) {
+    .top_bar {
+        padding: 10px 3% 10px 3%;
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+    .top_left, .top_right {
+        justify-content: center;
+    }
+    .nav_bar {
+        padding: 0 3%;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .nav_menu {
+        justify-content: center;
+        gap: 10px;
+    }
+    .nav_icon {
+        justify-content: center;
+        gap: 10px;
+    }
+    .footer_top>ul{
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+    .footer_top>ul>li{
+        font-size: 16px;
+        min-width: auto;
+        width: 100%;
+    }
+    .footer_bottem{
+        font-size: 11px;
+        padding: 0 3%;
+    }
+}

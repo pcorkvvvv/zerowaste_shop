@@ -1,0 +1,91 @@
+main{
+    width: 100%; 
+    max-width: 1920px;
+    min-height: 1823px;
+    background-color: whitesmoke;
+    margin: 0 auto;
+    padding: 20px 5%;
+    box-sizing: border-box;
+}
+.logo_s>h1{
+    margin: 76px 0 100px 0;
+    font-size: 120px;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.main_word{
+    width: 100%;
+    max-width: 1780px;
+    min-height: 150px;
+    margin: 100px auto 0 auto;
+    font-size: 30px;
+    padding: 10px 5%;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.img_1{
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+.img_1 img{
+    width: 100%;
+    height: auto;
+    max-width: 1280px;
+}
+.sub_word{
+    width: 100%;
+    max-width: 1780px;
+    min-height: 300px;
+    margin: 50px auto 0 auto;
+    font-size: 15px;
+    padding: 50px 5%;
+    font-weight: bold;
+    text-align: center;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+/* 태블릿 반응형 (1024px 이하) */
+@media (max-width: 1024px) {
+    main{
+        padding: 20px 3%;
+    }
+    .logo_s>h1{
+        font-size: 80px;
+        margin: 50px 0 70px 0;
+    }
+    .main_word{
+        font-size: 26px;
+        padding: 10px 3%;
+    }
+    .sub_word{
+        font-size: 14px;
+        padding: 40px 3%;
+    }
+}
+
+/* 모바일 반응형 (720px 이하) */
+@media (max-width: 720px) {
+    main{
+        padding: 15px 3%;
+    }
+    .logo_s>h1{
+        font-size: 50px;
+        margin: 30px 0 50px 0;
+    }
+    .main_word{
+        font-size: 20px;
+        padding: 10px 3%;
+        margin: 60px auto 0 auto;
+    }
+    .sub_word{
+        font-size: 13px;
+        padding: 30px 3%;
+        margin: 30px auto 0 auto;
+    }
+}
+
